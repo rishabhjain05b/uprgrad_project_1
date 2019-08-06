@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+    
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+            <h2 id="logo">ScriBBler</h2>
+            <h3 id="logo2">Explore. Imagine. Create</h3>
+
+            <div id="signs1">
+        	<button id="signin" >Sign In</button>
+               <div id="signinmodal" class="signinmodal">
+                  <div class="signinmodal-content">
+                   <span class="close">&times;</span>
+                   <p>
+                      <center> <h2>Welcome Back!</h2></center>
+                       <hr>
+                       <form>
+                        <label>Username </label><br><br>
+                        <input type="text" placeholder="Enter Username" class ="header-inputs"  required >
+                        <br><br>
+                        <label>Password </label><br><br>
+                        <input type="password" placeholder="Enter Password" class ="header-inputs" required ><BR><BR>
+                        <button type="submit" class="form-button" >Sign in</button><br><br>
+                        <center> <h3>Not a member?  <a href="">Sign up</a></h3></center>
+                    </form>
+                   </p>
+                  </div>
+               </div>
+            </div>
+
+               <button id="signup">Sign Up</button>
+               <div id="signupmodal" class="signupmodal">
+                  <div class="signupmodal-content">
+                   <span class="close2">&times;</span>
+                   <p>
+                      <center> <h2>Getting Started</h2></center>
+                       <hr>
+                       <form>
+                        <label>Full Name  </label><br><br>
+                        <input type="text" placeholder="Enter Full Name" class ="header-inputs"  required >
+                        <br><br>
+                        <label>Password </label><br><br>
+                        <input type="password" placeholder="Enter Password" class ="header-inputs" required ><BR><BR>
+                        <label>Username </label><br><br>
+                        <input type="text" placeholder="Enter Username" class ="header-inputs"  required >
+                        <br><br>
+                        <label>Confirm Password </label><br><br>
+                        <input type="password" placeholder="Enter Password" class ="header-inputs" required ><BR><BR>
+                        <button type="submit" class="form-button" >Sign in</button><br><br>
+                    </form>
+                   </p>
+                  </div>
+               </div>
+          </div>
+
+          <script type="text/javascript" src="js/header.js"></script>
+           
+        <div class="postButtons">
+
+            <button id="allposts" onclick="window.location.href='C:\Users\hp\Desktop\stub\html\bloglist.html'" >All Posts</button>
+            <button id="createposts" >Create Posts</button>
+            <div id="postsmodal" class="postsmodal">
+               <div class="postsmodal-content">
+                <span class="close3">&times;</span>
+                <p>
+                   <center> <h2>New Post</h2></center>
+                    <hr>
+                    <form>
+                     <label>Title </label><br><br>
+                     <input type="text" placeholder="Enter Post Title" class ="header-inputs"  required >
+                     <br><br>
+                     <label>Content </label><br><br>
+                     <input type="password" placeholder="Enter Post Content" class ="header-inputs2" required ><BR><BR>
+                     <button type="submit" class="form-button" >Create Post</button><br><br>
+                 </form>
+                </p>
+               </div>
+            </div>
+         </div>
+
+
+        </div>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign In modal here -->
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign Up modal here -->
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>
+
