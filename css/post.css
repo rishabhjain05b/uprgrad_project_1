@@ -12,8 +12,42 @@
     font-family: 'Niconne', cursive;
     font-size: 30px;
 }
-.blogContent{
+/* .blogContent{
 
+} */
+
+#signin
+{
+    color:white;
+    font-size: 15px;
+    background-color:blue; 
+    font-family: 'Times New Roman', Times, serif; 
+    height:40px;
+    width:100px;
+    margin-left: 1000px;
+    margin-top: -100px;
+    display: block;
 }
 
-/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+#signup
+{
+  color:white;
+  font-size: 15px;
+  background-color:blue; 
+  font-family: 'Times New Roman', Times, serif; 
+  height:40px;
+  width:100px;
+  margin-left: 1120px;
+  margin-top: -100px;
+  display: block;
+}
+
+#editsave {
+    background-color: rgb(223, 6, 172);
+    color: white;
+    padding: 5px 10px;
+    margin-left: 95%;
+    outline: none;
+    border-radius: 2px;
+  }
+  
