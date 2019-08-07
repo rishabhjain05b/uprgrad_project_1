@@ -42,12 +42,55 @@
   display: block;
 }
 
-#editsave {
+#editSave {
     background-color: rgb(223, 6, 172);
     color: white;
     padding: 5px 10px;
-    margin-left: 95%;
+    height:40px;
+    width:100px;
+    margin-left: 90%;
     outline: none;
     border-radius: 2px;
   }
   
+  #likeButton {
+    background-color: rgb(223, 6, 172);
+    color: white;
+    padding: 5px 15px;
+    margin-top: 2%;
+    outline: none;
+    border-radius: 2px;
+  }
+  
+  #likeText {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+  }
+  
+  #textArea {
+    padding: 5px;
+    width: 90%;
+  }
+  
+  #commentButton {
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    outline: none;
+  }
+  
+  #grayContainer {
+    width: 90%;
+    background-color: gray;
+    padding: 1%;
+  }
+  
+  
+  .commentClass {
+    background-color: white;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 1%;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
