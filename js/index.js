@@ -23,3 +23,8 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+var allposts = document.getElementById("allposts");
+allposts.onclick = function(){
+ window.location = "./html/bloglist.html";
+}
