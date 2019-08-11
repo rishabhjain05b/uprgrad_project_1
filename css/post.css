@@ -1,96 +1,96 @@
 .blogTite {
-    font-size: 150%;
-    font-family: 'Abel', sans-serif;
-    font-weight: bold;
+  font-size: 150%;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
 }
 .blogText {
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+#blogBody{
+ padding: 1%;
+ margin: 2%;
+}
+
 .blogAuthor {
-    padding: 0px 0px 0px 10px;
-    font-family: 'Niconne', cursive;
-    font-size: 30px;
+  padding: 0px 0px 0px 10px;
+  font-family: 'Niconne', cursive;
+  font-size: 30px;
+  margin:2%;
 }
-/* .blogContent{
+.blogContent{
 
-} */
-
-#signin
-{
-    color:white;
-    font-size: 15px;
-    background-color:blue; 
-    font-family: 'Times New Roman', Times, serif; 
-    height:40px;
-    width:100px;
-    margin-left: 1000px;
-    margin-top: 80px;
-    display: block;
 }
 
-#signup
-{
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+#edit{
+  float:right;
+  padding: 10px 30px;
+  margin-right: 2%;
   color:white;
-  font-size: 15px;
-  background-color:blue; 
-  font-family: 'Times New Roman', Times, serif; 
-  height:40px;
-  width:100px;
-  margin-left: 1120px;
-  margin-top: -150px;
-  display: block;
+  background:#DC143C;
+  border: none;
+  box-shadow: 0 8px 6px -6px #DC143C;
+  cursor: pointer;
+  
+
 }
 
-#editSave {
-    background-color: rgb(223, 6, 172);
-    color: white;
-    padding: 5px 10px;
-    height:40px;
-    width:100px;
-    margin-left: 90%;
-    outline: none;
-    border-radius: 2px;
-  }
-  
-  #likeButton {
-    background-color: rgb(223, 6, 172);
-    color: white;
-    padding: 5px 15px;
-    margin-top: 2%;
-    outline: none;
-    border-radius: 2px;
-  }
-  
-  #likeText {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5px;
-  }
-  
-  #textArea {
-    padding: 5px;
-    width: 90%;
-  }
-  
-  #commentButton {
-    background-color: red;
-    color: white;
-    padding: 5px 15px;
-    outline: none;
-  }
-  
-  #grayContainer {
-    width: 90%;
-    background-color: gray;
-    padding: 1%;
-  }
-  
-  
-  .commentClass {
-    background-color: white;
-    margin-right: 1%;
-    margin-left: 1%;
-    padding: 1%;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+#save{
+  float:right;
+  padding: 10px 30px;
+  margin-right: 2%;
+  color:white;
+  background:#DC143C;
+  border: none;
+  box-shadow: 0 8px 6px -6px #DC143C;
+  cursor: pointer;
+  display:none;
+}
+
+#like{
+  margin-left:3%;
+  padding: 10px 30px;
+  color:white;
+  background:#DC143C;
+  border: none;
+  box-shadow: 0 8px 6px -6px #DC143C;
+  cursor: pointer;
+}
+
+
+#commentArea{
+   margin-left:3%;
+   width:60%;
+  height:100%;
+}
+
+#counter{
+  margin-left:3%;
+}
+
+#commentBtn{
+  margin-left:3%;
+  margin-top:1%;
+ padding: 10px 30px;
+  color:white;
+  background:#DC143C;
+  border: none;
+  box-shadow: 0 8px 6px -6px #DC143C;
+  cursor: pointer;
+
+}
+
+.commentHead{
+  margin-left:3%;
+  margin-top:3%;
+}
+
+#commentContainer{
+  width:54%;
+  margin-left:3%;
+  background: #DCDCDC;
+ border:10px solid #DCDCDC;
+}

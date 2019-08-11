@@ -1,53 +1,47 @@
-var likes = 0;
-var commentArray = [];
-function editSavePost() {
-  var title = document.getElementById("blogTitleNew");
-  var action = document.getElementById("editSave").innerText;
-  var description = document.getElementById("blogBody");
-  var saveEditButton = document.getElementById("editSave");
-
-  if (action === "Edit ") {
-    title.contentEditable = true;
-    description.contentEditable = true;
-    title.style.outline = "2px solid pink";
-    description.style.border = "2px solid pink";
-    description.style.outline = "2px solid lightblue";
-    saveEditButton.innerHTML = 'Save <i class="fa fa-save"></i>';
-  }
-
-  if (action === "Save ") {
-    title.contentEditable = false;
-    description.contentEditable = false;
-    title.style.outline = "none";
-    description.style.border = "none";
-    description.style.outline = "none";
-    saveEditButton.innerHTML = 'Edit <i class="fa fa-edit"></i>';
-  }
+var edit = document.getElementById("edit");
+var save = document.getElementById("save");
+var blogBody = document.getElementById("blogBody");
+edit.onclick = function(){
+  edit.style.display="none";
+  save.style.display="block"; // changing the state of the button here
+  blogBody.style.boxShadow = "inset 0 0 5px #000";
+  blogBody.contentEditable="true";
 }
 
-function postLiked() {
-  var likeButton = document.getElementById("likeButton");
-  var likeText = document.getElementById("likeText");
-  likeButton.innerHTML = '<i class="fa fa-thumbs-up"></i> Liked!';
-  likes += 1;
-  if (likes === 1) {
-    likeText.innerText = likes + " person likes this!";
-  }
-  if (likes > 1) {
-    likeText.innerText = likes + " people have liked this!";
-  }
+save.onclick = function(){
+  edit.style.display="block";
+  save.style.display="none";
+  blogBody.style.boxShadow = "none";
+  blogBody.contentEditable="false";
+
 }
 
-function showComments() {
-  var comment = document.getElementById("textArea");
-  var commentContainer = document.getElementById("commentContainer");
-  commentContainer.innerHTML = "";
-  commentArray.push(comment.value);
-  comment.value = "";
-  for (var i = commentArray.length - 1; i >= 0; i--) {
-    var doc = document.createElement("p");
-    doc.setAttribute("class", "commentClass");
-    doc.innerText = commentArray[i];
-    document.getElementById("commentContainer").append(doc);
+
+var likebtn = document.getElementById("like");
+var count=0;
+likebtn.onclick = function(){
+
+     likebtn.innerHTML = "Liked!";
+     count++;
+     document.getElementById("counter").innerText = count + "  person likes this!";
+
+}
+
+
+var commentBtn = document.getElementById("commentBtn");
+commentBtn.onclick = function(){
+  text = commentArea.value;
+  var p = document.createElement("p");
+   p.style.background="white";
+   p.style.margin="10px";
+   p.style.padding="10px";
+   p.style.wordWrap = "break-word";
+  var node = document.createTextNode(text);
+  p.prepend(node);
+  var element = document.getElementById("commentContainer");
+  element.prepend(p);
+  var textArea = document.getElementById("commentArea");
+  if(!textArea.value || textArea.value!=textArea.defaultValue){
+   textArea.value = textArea.defaultValue; // here defaultValue is giving the default values that I set for the commentArea
   }
 }
